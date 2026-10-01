@@ -6,7 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+
+    <nav>
+        <ul> 
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
+            <li><a href="{% url 'contact' %}">CONTACT</a></li>
+            <li><a href="{% url 'help' %}">HELP</a></li>
+            <li><a href="{% url 'services'%}">SERVICES</a></li>
+        </ul>
+    </nav>
+
     <h1>This is project level template</h1>
+
 
     {% block content %}
         
